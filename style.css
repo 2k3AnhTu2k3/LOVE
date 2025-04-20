@@ -19,13 +19,18 @@ canvas {
   left: 50%;
   transform: translate(-50%, -50%);
   color: red;
-  font-size: 2.8rem;
+  font-size: 2.2rem;
   font-weight: bold;
   text-align: center;
   text-shadow: 0 0 10px #ea80b0;
   z-index: 10;
   font-family: "Arial", sans-serif;
   animation: pulse 2s infinite;
+  width: 200px;
+  line-height: 1.4;
+  word-wrap: break-word;
+  padding: 10px;
+  box-sizing: border-box;
 }
 
 @keyframes pulse {
@@ -33,7 +38,7 @@ canvas {
     transform: translate(-50%, -50%) scale(1);
   }
   50% {
-    transform: translate(-50%, -50%) scale(1.1);
+    transform: translate(-50%, -50%) scale(1.05); /* Giảm độ phóng to */
   }
   100% {
     transform: translate(-50%, -50%) scale(1);
